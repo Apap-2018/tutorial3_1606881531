@@ -1,0 +1,8 @@
+Pertanyaan dan jawaban
+
+1.  tidak ada error karena semua param sudah terisi
+2.  error karena ada parameter yang belum di isi karena "required" sama dengan true.
+3.  data pilot muncul
+4.  data tidak muncul karena data model hanya bertempat di RAM <<< asdos yang bilang
+5.  data muncul
+6.  semua data pilot muncul (asumsi data di pertanyaan 5 masih ada di RAM)

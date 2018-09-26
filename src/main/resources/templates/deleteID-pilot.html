@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete ID</title>
+</head>
+<body>
+    <div th:if="${deleteSuccess}">
+        <h2>ID deleted!</h2>
+    </div>
+    <!--IF ITS NOT FOUND-->
+    <div th:unless="${deleteSuccess}">
+        <h3>PILOT NOT FOUND, SORRY</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pilot By Its License Number</title>
+</head>
+<body>
+    <!--IF THE PILOT IS FOUND-->
+    <div th:if="${searchSuccess}">
+        <h3 th:text="'Pilot id is = ' + ${pilot.id}"></h3>
+        <h3 th:text="'License Number is = ' + ${pilot.licenseNumber}"></h3>
+        <h3 th:text="'The name is = ' + ${pilot.name}"></h3>
+        <h3 th:text="'Fly hour(s) is = ' + ${pilot.flyHour}"></h3>
+    </div>
+    <!--IF ITS NOT FOUND-->
+    <div th:unless="${searchSuccess}">
+        <h3>PILOT NOT FOUND, SORRY</h3>
+    </div>
+</body>
+</html>
